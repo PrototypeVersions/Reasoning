@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#f5f3ee">
+ <title>Inside the Argument — A CARS reasoning studio</title>
+ <meta name="description" content="Read closely. Follow the evidence. Take an argument apart and put it back together. An original interactive CARS learning concept by Blake Myers.">
+ <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+ <link rel="preload" href="./assets/sans.woff2" as="font" type="font/woff2" crossorigin>
+ <link rel="stylesheet" href="./style.css?v=1">
+</head>
+<body>
+ <a class="skip" href="#lab">Skip to the learning activity</a>
+ <header class="header">
+  <a class="brand" href="#museum/answer/0" aria-label="Inside the Argument, home"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M11 12h22M11 22h13M24 22l9 10M11 12v20h22"/><circle cx="11" cy="12" r="3"/><circle cx="24" cy="22" r="3"/><circle cx="33" cy="32" r="3"/></svg><span>INSIDE THE ARGUMENT<small>A CARS REASONING STUDIO</small></span></a>
+  <div class="header-right"><span class="prototype-note">Read. Reason. Reconsider.</span><button class="quiet-button" id="about-open"><span aria-hidden="true">ⓘ</span> Field notes</button></div>
+ </header>
+ <main>
+  <section class="introduction" aria-labelledby="page-title"><div><span class="eyebrow">CRITICAL ANALYSIS & REASONING SKILLS</span><h1 id="page-title">Good answers have <em>a structure.</em></h1><p>Find the evidence. Test the inference. See why an answer holds—or falls apart.</p></div><button class="tour-button" id="tour-open"><span class="tour-icon" aria-hidden="true">↗</span><span>New here?<strong>Take a quick tour</strong></span></button></section>
+  <nav class="passage-nav" aria-label="Choose a passage" id="passage-nav"></nav>
+  <div class="workspace" id="workspace">
+   <section class="reader" aria-label="Reading passage">
+    <div class="reader-tools"><span class="micro-label">THE PASSAGE</span><div><button id="text-size" class="text-size" aria-label="Increase passage text size" aria-pressed="false">Aa</button><button id="focus-reading" class="text-link" aria-pressed="false">Focus reading <span aria-hidden="true">↗</span></button></div></div>
+    <div class="reader-scroll" id="reader-scroll"><div id="passage-heading"></div><div class="reader-mode" id="reader-mode" role="status"></div><article id="passage-text"></article><div class="reading-end"><span aria-hidden="true">◇</span> All information needed is in the passage and question.</div></div>
+    <div class="reader-bottom"><span id="sentence-status">Original passage · no outside knowledge needed</span><button id="clear-evidence" class="text-link" hidden>Clear selections</button><button id="return-to-lab" class="text-link" hidden>Return to the activity →</button></div>
+   </section>
+   <section class="lab" id="lab" aria-label="Interactive reasoning activities" tabindex="-1">
+    <nav class="activity-nav" id="activity-nav" aria-label="Reasoning activity"></nav>
+    <div class="lab-scroll" id="lab-scroll"><div id="activity"></div></div>
+    <div class="lab-bottom"><span class="progress-label" id="progress-label"></span><div class="progress-dots" id="progress-dots" aria-hidden="true"></div><button class="text-link" id="reset-open">Start over</button></div>
+   </section>
+  </div>
+  <footer><span>An original learning concept by <strong>Blake Myers</strong></span><span>Independent CARS practice & exploration</span><a href="https://prototypeversions.github.io/Cell_Explanation/" target="_blank" rel="noopener">Explore the companion cell atlas ↗</a></footer>
+ </main>
+ <div class="toast" id="toast" role="status"></div>
+ <dialog id="about-dialog"><button class="close-dialog" data-close aria-label="Close field notes">×</button><span class="eyebrow">FIELD NOTES</span><h2>Make the reasoning visible.</h2><p>Inside the Argument is an independent educational prototype. Its three original passages explore cultural institutions, urban evaluation, and translation. Every question and explanation is authored for this experience.</p><h3>Built around CARS skills</h3><p>The questions address foundations of comprehension, reasoning within the text, and reasoning beyond the text. Interactive evidence tracing, answer repair, and argument maps are learning activities, not features of the actual MCAT.</p><p><a href="https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview" target="_blank" rel="noopener">Read the AAMC’s official CARS overview ↗</a></p><h3>A few useful distinctions</h3><ul><li>Evidence sets are selected, compact routes to the explanation. Other relevant sentences can also contribute.</li><li>Argument maps are instructional interpretations, not the only possible representations of a passage. Assumption cards state inferred commitments.</li><li>New findings in “What if?” are hypothetical. Assess their effect on the exact displayed claim.</li><li>Completion marks track activities explored, not validated mastery or an MCAT score.</li></ul><h3>Your progress stays here</h3><p>Answers and exercise progress are saved in this browser only. There are no accounts, analytics, AI requests, or external asset requests. “Start over” resets the current passage.</p><p class="fine-print">Not affiliated with or endorsed by UWorld or the AAMC. MCAT is an AAMC trademark. This prototype has not undergone psychometric validation. Content and design were developed with AI assistance and should receive independent editorial review before high-stakes instructional use.</p></dialog>
+ <dialog id="tour-dialog"><button class="close-dialog" data-close aria-label="Close quick tour">×</button><span class="eyebrow">YOUR WAY INTO THE ARGUMENT</span><h2>Read once.<br>Explore five ways.</h2><ol class="tour-list"><li><b>Decide</b><span>Read the passage and commit to an answer. Then inspect every choice’s explanation.</span></li><li><b>Trace</b><span>Select sentences in the passage and compare your evidence with a compact model route.</span></li><li><b>Repair</b><span>Change a flawed statement. Find the small edit that fixes a large reasoning error.</span></li><li><b>What if?</b><span>Predict what new evidence does to a precise claim, then reveal the connection.</span></li><li><b>Map</b><span>Place cards into an argument. Drag, or select a card and then a slot.</span></li></ol><p>There is no time limit. Revisit a passage, try another answer, or move freely between activities.</p><button class="primary" data-close>Start exploring <span>→</span></button></dialog>
+ <dialog id="reset-dialog"><button class="close-dialog" data-close aria-label="Cancel reset">×</button><span class="eyebrow">A FRESH READING</span><h2>Reset this passage?</h2><p>This clears its answers, evidence selections, and exercise progress in this browser. The other passages keep their progress.</p><div class="button-row"><button class="secondary" data-close>Keep my progress</button><button class="primary" id="reset-confirm">Reset this passage</button></div></dialog>
+ <noscript><p class="noscript">This interactive experience requires JavaScript. Please enable it and reload the page.</p></noscript>
+ <script type="module" src="./app.js?v=1"></script>
+</body>
+</html>
